@@ -1,0 +1,85 @@
+body {
+     background-color: peachpuff;
+     font-family: Georgia;
+     padding: 0px;
+     }
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+/* Left and right column */
+.column.side {
+  width: 270px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 800px;
+}
+
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+input {
+  width: 350px;
+  height: 35px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+	ul {
+     overflow: auto;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 250px;
+     background-color: Thistle;
+     }
+
+     li a {
+     border: 1px solid white;
+     display: block;
+     color: black;
+     padding: 8px 16px;
+     text-decoration: none;
+     }
+
+    li a:hover {
+    background-color: LavenderBlush;
+    color: black;
+    }
+    .p.one {
+    padding-top: 35px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 100px;
+  border-top-style: solid;
+  border-top-style: medium;
+  border-top-color: lightblue;
+  border-bottom-style: solid;
+  border-bottom-style: medium;
+  border-bottom-color: lightblue;
+  }
+
+
+    .video {
+    text-align: center;
+    }

@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<p lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spainblog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+
+  <div class="column side">
+<ul>
+  <li><a href="главная.html">Главная</a></li>
+  <li><a href="общиесведения.html">Общие сведения</a></li>
+  <li><a href="достопримечательности.html">Достопримечательности</a></li>
+  <li><a href="#традициииспании">Традиции Испании</a></li>
+  <li><a href="рецепты.html">Рецепты</a></li>
+  <li><a href="#чтопочитать">Что почитать</a></li>
+  <li><a href="#чтопосмотреть">Что посмотреть</a></li>
+  <li><a href="#изучениеиспанского">Изучение испанского</a></li>
+  <li><a href="нашиуслуги.html">Наши услуги</a></li>
+  <li><a href="#контакты">Контакты</a></li>
+</ul> </div>
+<div class="column middle">
+{% block content %}
+{% endblock %}
+<div class="column side">
+{% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
+</div>
+</body>
+</html>
